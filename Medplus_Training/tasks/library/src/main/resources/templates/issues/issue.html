@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Issue Book</title>
+</head>
+<body>
+    <div th:replace="~{fragments/header :: header}"></div>
+    <div th:replace="~{fragments/navbar :: navbar}"></div>
+
+    <h1>Issue Book</h1>
+
+    <p th:if="${message}" th:text="${message}"></p>
+
+    <form th:action="@{/issues/issue}" method="post">
+        <div>
+            <label for="bookid">Select Book:</label><br/>
+            <select id="bookid" name="bookid">
+                <option value="">-- Select Book --</option>
+                <option th:each="book : ${books}"
+                        th:value="${book.bookid}"
+                        th:text="${book.title + ' by ' + book.author + ' (ID: ' + book.bookid + ')'}">
+                </option>
+            </select>
+        </div>
+        <br/>
+
+        <div>
+            <label for="memberid">Select Member:</label><br/>
+            <select id="memberid" name="memberid">
+                <option value="">-- Select Member --</option>
+                <option th:each="member : ${members}"
+                        th:value="${member.memberId}"
+                        th:text="${member.name + ' (ID: ' + member.memberId + ')'}">
+                </option>
+            </select>
+        </div>
+        <br/>
+
+        <div>
+            <input type="submit" value="Issue Book" />
+        </div>
+    </form>
+
+    <br/>
+    <p><a th:href="@{/issues}">Back to Issue Records</a></p>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+    <nav th:fragment="navbar" style="text-align: center; margin-bottom: 20px;">
+        <a th:href="@{/}" style="margin: 0 10px; color: blue;">Home</a>
+        <a th:href="@{/books}" style="margin: 0 10px; color: blue;">Manage Books</a>
+        <a th:href="@{/members}" style="margin: 0 10px; color: blue;">Manage Members</a>
+        <a th:href="@{/issues}" style="margin: 0 10px; color: blue;">Issue Records</a>
+        <a th:href="@{/issues/issue}" style="margin: 0 10px; color: blue;">Issue Book</a>
+        <a th:href="@{/issues/return}" style="margin: 0 10px; color: blue;">Return Book</a>
+    </nav>
+    <hr/>
+</body>
+</html>
