@@ -1,0 +1,136 @@
+p{
+    background-color: antiquewhite;
+    font-family: sans-serif;
+    border: outset;
+    border-width: 5px;
+    border-color: rgb(224, 16, 16);
+    border-radius: 10px;
+    padding: 5px;
+}
+#p1{
+    background-color: aqua;
+}
+#p2{
+    background-color: aquamarine;
+}
+#p3{
+    background-color: azure;
+}
+.odd{
+    color: tomato;
+    font-size: 40px;
+}
+.even{
+    color:magenta;
+    font-family:"consolas",sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: black dotted underline;
+}
+h2{
+    background-color: lightpink;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: double;
+    border-left-width: 10px;
+    border-left-color: orangered;
+}
+#mainbody{
+    background: linear-gradient(to right, skyblue, lightpink);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div{
+    background-color: antiquewhite;
+    font-family: sans-serif;
+    border: outset;
+    border-width: 5px;
+    border-color: rgb(224, 16, 16);
+    border-radius: 10px;
+    padding: 5px;
+}
+#body2{
+    background-image: url("imagebg.jpeg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;   
+}
+#body3{
+    margin:0px;
+    border: 2px solid;
+}
+#box1{
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    background: greenyellow;
+    margin-top: 50px;
+}
+#box2{
+    border: 5px solid;
+    width: 250px;
+    height: 350px;
+    font-size: 22px;
+    background: skyblue;
+    margin-bottom: 50px;
+    margin-left: 37.5%;
+}
+img{
+    float:right;
+}
+#boxa{
+    border: 1 px solid;
+    border-color: black;
+    height:300px;
+    width:300px;
+    background-color: skyblue;
+
+    position: relative;
+    left: 250px;
+    top: 250px;
+}
+#boxb{
+    border: 1 px solid;
+    border-color: black;
+    height:100px;
+    width:100px;
+    background-color: turquoise;
+
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+#boxc{
+    border: 1 px solid;
+    border-color: black;
+    height:300px;
+    width:300px;
+    background-color: thistle;
+
+    position: static;
+}
+
+#box0{
+    border: 1 px solid;
+    border-color: black;
+    height:300px;
+    width:300px;
+    background-color: violet;
+
+    position: fixed;
+    top:0px;
+    right:0px;
+}
+#boxx{
+    border: 1 px solid;
+    border-color: black;
+    height:300px;
+    width:300px;
+    background-color: salmon;
+
+    position: sticky;
+    top:0px;
+    bottom: 0px;
+}
