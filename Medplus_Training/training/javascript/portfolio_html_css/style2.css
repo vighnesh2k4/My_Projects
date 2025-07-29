@@ -1,0 +1,61 @@
+a:link{
+    color:olivedrab;
+}
+a:visited{
+    color:maroon;
+}
+a:hover{
+    color:sandybrown;
+}
+a:active{
+    color:darkblue;
+}
+button:hover{
+    color:red;
+    background-color: palegreen;
+}
+
+li:nth-child(even){
+    background-color: powderblue;
+}
+li:nth-child(odd){
+    background-color: yellowgreen;
+}
+li:nth-child(3n+1){
+    background-color: peachpuff;
+}
+li:nth-child(7){
+    background-color: yellow;
+}
+h1{
+    text-shadow: 0px 5px 0px burlywood, 5px 0px 0px lightcoral;
+}
+h1:hover{
+    box-shadow: 50px 5px 50px pink;
+}
+.fa-apple{
+    color: grey;
+}
+#boxa{
+    border: 4px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 225px;
+    text-align: center;
+    background: lightskyblue;
+
+    transform: translateX(50px);
+    transform: translateY(50px);
+    transform: translate(50px,50px);
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+    transform: rotateZ(180deg);
+    transform: scaleX(3);
+    transform: scaleY(3);
+    transform: scale(2,2);
+    transform: skewX(45deg);
+    transform: skewY(45deg);
+    transform: skew(20deg,20deg);
+
+    transform: matrix(1,0,0,1,0,0);
+}
